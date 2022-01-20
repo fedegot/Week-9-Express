@@ -9,6 +9,7 @@ const indexRouter = require("./routes/index");
 const errorRouter = require("./routes/error");
 const accountingRouter = require("./routes/accounting");
 
+app.use(express.json());
 app.use("/", indexRouter);
 app.use("/accounting", accountingRouter);
 app.use("/marketing", marketingRouter);
